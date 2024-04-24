@@ -52,7 +52,7 @@ class AddProductFormView: UIView {
         stackView.distribution = .fillEqually
         stackView.axis = .horizontal
         stackView.alignment = .fill
-        stackView.spacing = 10
+        stackView.spacing = NatSpacing.tiny
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
@@ -62,13 +62,13 @@ class AddProductFormView: UIView {
         stackView.distribution = .fillProportionally
         stackView.axis = .horizontal
         stackView.alignment = .fill
-        stackView.spacing = 10
+        stackView.spacing = NatSpacing.tiny
         stackView.translatesAutoresizingMaskIntoConstraints = false
         return stackView
     }()
     
     lazy var loading: NatProgressIndicatorCircular = {
-        let indicator = NatProgressIndicatorCircular(size: .medium, backgroundLayer: true, theme: .consultoriaDeBelezaLight)
+        let indicator = NatProgressIndicatorCircular(size: .semi, backgroundLayer: true, theme: .consultoriaDeBelezaLight)
         indicator.translatesAutoresizingMaskIntoConstraints = false
         return indicator
     }()
@@ -85,12 +85,12 @@ class AddProductFormView: UIView {
         
         NSLayoutConstraint.activate([
             formStackView.topAnchor.constraint(equalTo: self.topAnchor),
-            formStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            formStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            formStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: NatSpacing.standard),
+            formStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -NatSpacing.standard),
             
-            buttonStackView.topAnchor.constraint(equalTo: formStackView.bottomAnchor, constant: NatSizes.standard),
-            buttonStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            buttonStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor),
+            buttonStackView.topAnchor.constraint(equalTo: formStackView.bottomAnchor, constant: NatSpacing.tiny),
+            buttonStackView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: NatSpacing.standard),
+            buttonStackView.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -NatSpacing.standard),
             buttonStackView.heightAnchor.constraint(equalToConstant: 50),
             buttonStackView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
         ])

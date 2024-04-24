@@ -38,8 +38,8 @@ class AddProductFormViewController: UIViewController {
             .sink { [weak self] error in
                 switch error {
                 case .none:
-                    self?.mainView.productDescripionTextField.error = nil
-                    self?.mainView.productQuantityTextField.error = nil
+                    self?.mainView.productDescripionTextField.configure(state: .none, with: "")
+                    self?.mainView.productQuantityTextField.configure(state: .none, with: "")
                 case .emptyForm:
                     self?.mainView.productDescripionTextField.error = "Preencha o Código"
                     self?.mainView.productQuantityTextField.error = "Preencha a Quantidade"
@@ -56,15 +56,15 @@ class AddProductFormViewController: UIViewController {
     }
     
     func setupButtons() {
-        self.mainView.addProductButton.addTarget(self, action: #selector(close), for: .touchUpInside)
+        mainView.addProductButton.addTarget(self, action: #selector(addProduct), for: .touchUpInside)
     }
     
     @objc func close() {
-        printContent("some")
+        print("some")
     }
     
-    @objc func addProduct() async {
-        await self.viemModel.addItem(item: AddCartItemForm(
+    @objc func addProduct() {
+        self.viemModel.addItem(item: AddCartItemForm(
             code: mainView.productDescripionTextField.text ?? "",
             quantity: Int(mainView.productQuantityTextField.text ?? "0") ?? 0
         ))

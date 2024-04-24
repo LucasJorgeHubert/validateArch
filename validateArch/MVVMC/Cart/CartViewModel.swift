@@ -8,11 +8,6 @@
 import Foundation
 import Combine
 
-struct CartItem: Codable, Equatable {
-    let name: String
-    let price: Int
-}
-
 class CartViewModel: ObservableObject {
     
     let coordinator: MainCoordinator
@@ -23,6 +18,7 @@ class CartViewModel: ObservableObject {
     
     init(coordinator: MainCoordinator) {
         self.coordinator = coordinator
+        getCart()
         
         addProductFormViewModel.$itemAdded
             .sink { item in
@@ -33,10 +29,13 @@ class CartViewModel: ObservableObject {
     }
     
     @Published var items: [CartItem] = []
-    @Published var itemsCount: Int = 0
+    @Published var cart: CartModel?
+    
+    func getCart() {
+        self.cart = CartModel.mockData()
+    }
     
     func addItemFromForm(item: AddCartItemForm) {
-        itemsCount += 1
         self.items.append(CartItem(name: item.code, price: 10))
     }
     
@@ -60,6 +59,10 @@ class CartViewModel: ObservableObject {
         return String(self.items[index].price)
     }
     
+    func getItemsCount() -> Int {
+        return self.items.count
+    }
+    
     func getTotal() -> Int {
         var total = 0
         for item in self.items {
@@ -67,5 +70,7 @@ class CartViewModel: ObservableObject {
         }
         return total
     }
+    
+    
 }
 

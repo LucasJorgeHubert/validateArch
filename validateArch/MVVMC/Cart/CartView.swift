@@ -15,6 +15,8 @@ class CartView: UIView {
         super.init(frame: .zero)
         setupConstraints()
         self.backgroundColor = .white
+        DesignSystem().configure(with: .consultoriaDeBelezaLight)
+        
     }
     
     required init?(coder: NSCoder) {
@@ -28,22 +30,20 @@ class CartView: UIView {
         return scrollView
     }()
     
-    lazy var title: UILabel = {
+    lazy var cicleLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = NatFonts.font(ofSize: .heading4)
-        label.text = "Cart"
-        return label
-    }()
-    
-    lazy var countLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = NatFonts.font(ofSize: .body1)
+        label.font = NatFonts.font(ofSize: .overline)
         return label
     }()
     
     lazy var formView: UIView = {
+        let view = UIView()
+        view.translatesAutoresizingMaskIntoConstraints = false
+        return view
+    }()
+    
+    lazy var buttonsView: UIView = {
         let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
@@ -64,9 +64,9 @@ class CartView: UIView {
     
     private func setupConstraints() {
         addSubview(scrollView)
-        scrollView.addSubview(title)
-        scrollView.addSubview(countLabel)
+        scrollView.addSubview(cicleLabel)
         scrollView.addSubview(formView)
+        scrollView.addSubview(buttonsView)
         scrollView.addSubview(panel)
         
         panel.setDetailView(tableView)
@@ -90,20 +90,21 @@ class CartView: UIView {
         NSLayoutConstraint.activate([
             scrollView.topAnchor.constraint(equalTo: topAnchor),
             scrollView.bottomAnchor.constraint(equalTo: bottomAnchor),
-            scrollView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 32),
-            scrollView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -32),
+            scrollView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            scrollView.trailingAnchor.constraint(equalTo: trailingAnchor),
             
-            title.topAnchor.constraint(equalTo: scrollView.topAnchor, constant: 32),
-            title.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            cicleLabel.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            cicleLabel.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: NatSpacing.standard),
             
-            countLabel.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 32),
-            countLabel.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
-            
-            formView.topAnchor.constraint(equalTo: countLabel.bottomAnchor, constant: 32),
+            formView.topAnchor.constraint(equalTo: cicleLabel.bottomAnchor, constant: NatSpacing.standard),
             formView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
             formView.heightAnchor.constraint(greaterThanOrEqualToConstant: 100),
             
-            panel.topAnchor.constraint(equalTo: formView.bottomAnchor, constant: 32),
+            buttonsView.topAnchor.constraint(equalTo: formView.bottomAnchor, constant: NatSpacing.standard),
+            buttonsView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            buttonsView.heightAnchor.constraint(greaterThanOrEqualToConstant: 100),
+            
+            panel.topAnchor.constraint(equalTo: buttonsView.bottomAnchor, constant: NatSpacing.standard),
             panel.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
             
 //            tableView.widthAnchor.constraint(equalTo: panel.widthAnchor),

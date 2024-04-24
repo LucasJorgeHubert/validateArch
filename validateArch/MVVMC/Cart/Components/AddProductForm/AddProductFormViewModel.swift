@@ -28,37 +28,36 @@ class AddProductFormViewModel: ObservableObject {
     var cancellables = Set<AnyCancellable>()
     
     init() {
-        validate()
     }
     
-    func validate() {
-        if itemAdded?.code == "" && itemAdded?.quantity == 0 {
+    func validate(item: AddCartItemForm) {
+        if item.code == "" && item.quantity == 0 {
             isValid = false
-            error = .emptyForm
-        } else if itemAdded?.code == "" {
+            self.error = .emptyForm
+        } else if item.code == "" {
             isValid = false
-            error = .invalidCode
-        } else if itemAdded?.quantity == 0 {
+            self.error = .invalidCode
+        } else if item.quantity == 0 {
             isValid = false
-            error = .invalidQuantity
+            self.error = .invalidQuantity
         } else {
             isValid = true
-            error = .none
+            self.error = .none
         }
     }
     
-    func addItem(item: AddCartItemForm) async {
-        validate()
+    func addItem(item: AddCartItemForm)  {
+        validate(item: item)
         
         if isValid {
-            await fakeRequest()
+            fakeRequest(item: item)
         }
     }
     
-    func fakeRequest() async {
+    func fakeRequest(item: AddCartItemForm)  {
         isLoading = true
-        print("item added: \(itemAdded!)")
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
+            self.itemAdded = item
             self.isLoading = false
         }
     }

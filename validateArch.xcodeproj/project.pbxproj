@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		694613F92BD6F6A700676B6D /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694613F82BD6F6A700676B6D /* CartViewModel.swift */; };
+		694CD2132BD887DD003A73A4 /* AddProductButtonsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CD2122BD887DD003A73A4 /* AddProductButtonsView.swift */; };
+		694CD2152BD887FE003A73A4 /* AddProductButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CD2142BD887FE003A73A4 /* AddProductButtonsViewController.swift */; };
+		694CD2172BD8880A003A73A4 /* AddProductButtonsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 694CD2162BD8880A003A73A4 /* AddProductButtonsViewModel.swift */; };
 		696DE72E2BD34B280069FD39 /* AddProductFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696DE72D2BD34B280069FD39 /* AddProductFormView.swift */; };
 		696DE7302BD34B3E0069FD39 /* AddProductFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696DE72F2BD34B3E0069FD39 /* AddProductFormViewController.swift */; };
 		696DE7342BD34F770069FD39 /* CartModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696DE7332BD34F770069FD39 /* CartModel.swift */; };
@@ -19,20 +23,12 @@
 		698AD1D62BD2EB0C005D974D /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 698AD1D52BD2EB0C005D974D /* TableViewCell.swift */; };
 		69CF69782BD02FAC00583A9E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF69772BD02FAC00583A9E /* AppDelegate.swift */; };
 		69CF697A2BD02FAC00583A9E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF69792BD02FAC00583A9E /* SceneDelegate.swift */; };
-		69CF697C2BD02FAC00583A9E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF697B2BD02FAC00583A9E /* ViewController.swift */; };
 		69CF69822BD02FAC00583A9E /* validateArch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69CF69802BD02FAC00583A9E /* validateArch.xcdatamodeld */; };
 		69CF69842BD02FAE00583A9E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69CF69832BD02FAE00583A9E /* Assets.xcassets */; };
 		69CF69872BD02FAE00583A9E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69CF69852BD02FAE00583A9E /* LaunchScreen.storyboard */; };
 		69CF69922BD02FAE00583A9E /* validateArchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF69912BD02FAE00583A9E /* validateArchTests.swift */; };
 		69CF699C2BD02FAE00583A9E /* validateArchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF699B2BD02FAE00583A9E /* validateArchUITests.swift */; };
 		69CF699E2BD02FAE00583A9E /* validateArchUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF699D2BD02FAE00583A9E /* validateArchUITestsLaunchTests.swift */; };
-		69CF69AC2BD030F000583A9E /* ViperViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF69AB2BD030F000583A9E /* ViperViewController.swift */; };
-		69CF69AE2BD030FB00583A9E /* ViperPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF69AD2BD030FB00583A9E /* ViperPresenter.swift */; };
-		69CF69B02BD0310800583A9E /* ViperInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF69AF2BD0310800583A9E /* ViperInteractor.swift */; };
-		69CF69B22BD0312A00583A9E /* ViperFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF69B12BD0312A00583A9E /* ViperFactory.swift */; };
-		69CF69B42BD0313300583A9E /* ViperEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF69B32BD0313300583A9E /* ViperEntity.swift */; };
-		69CF69B62BD0314300583A9E /* ViperRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF69B52BD0314300583A9E /* ViperRouter.swift */; };
-		69CF69B82BD0314F00583A9E /* ViperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CF69B72BD0314F00583A9E /* ViperView.swift */; };
 		69CF69BB2BD03CC700583A9E /* NatDS in Frameworks */ = {isa = PBXBuildFile; productRef = 69CF69BA2BD03CC700583A9E /* NatDS */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +50,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		694613F82BD6F6A700676B6D /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		694CD2122BD887DD003A73A4 /* AddProductButtonsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductButtonsView.swift; sourceTree = "<group>"; };
+		694CD2142BD887FE003A73A4 /* AddProductButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductButtonsViewController.swift; sourceTree = "<group>"; };
+		694CD2162BD8880A003A73A4 /* AddProductButtonsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductButtonsViewModel.swift; sourceTree = "<group>"; };
 		696DE72D2BD34B280069FD39 /* AddProductFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductFormView.swift; sourceTree = "<group>"; };
 		696DE72F2BD34B3E0069FD39 /* AddProductFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddProductFormViewController.swift; sourceTree = "<group>"; };
 		696DE7332BD34F770069FD39 /* CartModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartModel.swift; sourceTree = "<group>"; };
@@ -67,7 +67,6 @@
 		69CF69742BD02FAC00583A9E /* validateArch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = validateArch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CF69772BD02FAC00583A9E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69CF69792BD02FAC00583A9E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		69CF697B2BD02FAC00583A9E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		69CF69812BD02FAC00583A9E /* validateArch.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = validateArch.xcdatamodel; sourceTree = "<group>"; };
 		69CF69832BD02FAE00583A9E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69CF69862BD02FAE00583A9E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,13 +76,6 @@
 		69CF69972BD02FAE00583A9E /* validateArchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = validateArchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CF699B2BD02FAE00583A9E /* validateArchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validateArchUITests.swift; sourceTree = "<group>"; };
 		69CF699D2BD02FAE00583A9E /* validateArchUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validateArchUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		69CF69AB2BD030F000583A9E /* ViperViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperViewController.swift; sourceTree = "<group>"; };
-		69CF69AD2BD030FB00583A9E /* ViperPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperPresenter.swift; sourceTree = "<group>"; };
-		69CF69AF2BD0310800583A9E /* ViperInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperInteractor.swift; sourceTree = "<group>"; };
-		69CF69B12BD0312A00583A9E /* ViperFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperFactory.swift; sourceTree = "<group>"; };
-		69CF69B32BD0313300583A9E /* ViperEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperEntity.swift; sourceTree = "<group>"; };
-		69CF69B52BD0314300583A9E /* ViperRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperRouter.swift; sourceTree = "<group>"; };
-		69CF69B72BD0314F00583A9E /* ViperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViperView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,9 +104,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		694CD2112BD887B3003A73A4 /* AddProductButtons */ = {
+			isa = PBXGroup;
+			children = (
+				694CD2122BD887DD003A73A4 /* AddProductButtonsView.swift */,
+				694CD2142BD887FE003A73A4 /* AddProductButtonsViewController.swift */,
+				694CD2162BD8880A003A73A4 /* AddProductButtonsViewModel.swift */,
+			);
+			path = AddProductButtons;
+			sourceTree = "<group>";
+		};
 		696DE72B2BD349650069FD39 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				694CD2112BD887B3003A73A4 /* AddProductButtons */,
 				696DE72C2BD34AE00069FD39 /* AddProductForm */,
 			);
 			path = Components;
@@ -195,8 +198,6 @@
 				698AD1C92BD2E66E005D974D /* MVVMC */,
 				69CF69772BD02FAC00583A9E /* AppDelegate.swift */,
 				69CF69792BD02FAC00583A9E /* SceneDelegate.swift */,
-				69CF697B2BD02FAC00583A9E /* ViewController.swift */,
-				69CF69AA2BD030DB00583A9E /* VIPER */,
 				69CF69832BD02FAE00583A9E /* Assets.xcassets */,
 				69CF69852BD02FAE00583A9E /* LaunchScreen.storyboard */,
 				69CF69882BD02FAE00583A9E /* Info.plist */,
@@ -209,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				69CF69912BD02FAE00583A9E /* validateArchTests.swift */,
+				694613F82BD6F6A700676B6D /* CartViewModel.swift */,
 			);
 			path = validateArchTests;
 			sourceTree = "<group>";
@@ -220,20 +222,6 @@
 				69CF699D2BD02FAE00583A9E /* validateArchUITestsLaunchTests.swift */,
 			);
 			path = validateArchUITests;
-			sourceTree = "<group>";
-		};
-		69CF69AA2BD030DB00583A9E /* VIPER */ = {
-			isa = PBXGroup;
-			children = (
-				69CF69AB2BD030F000583A9E /* ViperViewController.swift */,
-				69CF69B72BD0314F00583A9E /* ViperView.swift */,
-				69CF69AF2BD0310800583A9E /* ViperInteractor.swift */,
-				69CF69AD2BD030FB00583A9E /* ViperPresenter.swift */,
-				69CF69B12BD0312A00583A9E /* ViperFactory.swift */,
-				69CF69B32BD0313300583A9E /* ViperEntity.swift */,
-				69CF69B52BD0314300583A9E /* ViperRouter.swift */,
-			);
-			path = VIPER;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,6 +290,9 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					New,
+				);
 				LastSwiftUpdateCheck = 1520;
 				LastUpgradeCheck = 1520;
 				TargetAttributes = {
@@ -372,24 +363,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				69CF697C2BD02FAC00583A9E /* ViewController.swift in Sources */,
+				694CD2172BD8880A003A73A4 /* AddProductButtonsViewModel.swift in Sources */,
 				698AD1D62BD2EB0C005D974D /* TableViewCell.swift in Sources */,
-				69CF69B42BD0313300583A9E /* ViperEntity.swift in Sources */,
 				698AD1D02BD2E6E8005D974D /* CartViewModel.swift in Sources */,
+				694CD2152BD887FE003A73A4 /* AddProductButtonsViewController.swift in Sources */,
 				69CF69822BD02FAC00583A9E /* validateArch.xcdatamodeld in Sources */,
-				69CF69B02BD0310800583A9E /* ViperInteractor.swift in Sources */,
-				69CF69B22BD0312A00583A9E /* ViperFactory.swift in Sources */,
-				69CF69AC2BD030F000583A9E /* ViperViewController.swift in Sources */,
 				696DE7302BD34B3E0069FD39 /* AddProductFormViewController.swift in Sources */,
 				696DE7342BD34F770069FD39 /* CartModel.swift in Sources */,
 				696DE72E2BD34B280069FD39 /* AddProductFormView.swift in Sources */,
 				698AD1CE2BD2E6DC005D974D /* CartViewController.swift in Sources */,
 				696DE7382BD352B90069FD39 /* AddProductFormModel.swift in Sources */,
 				698AD1CC2BD2E68B005D974D /* CartView.swift in Sources */,
-				69CF69B82BD0314F00583A9E /* ViperView.swift in Sources */,
+				694CD2132BD887DD003A73A4 /* AddProductButtonsView.swift in Sources */,
 				696DE7362BD3529D0069FD39 /* AddProductFormViewModel.swift in Sources */,
-				69CF69AE2BD030FB00583A9E /* ViperPresenter.swift in Sources */,
-				69CF69B62BD0314300583A9E /* ViperRouter.swift in Sources */,
 				69CF69782BD02FAC00583A9E /* AppDelegate.swift in Sources */,
 				698AD1D32BD2E6FD005D974D /* MainCoordinator.swift in Sources */,
 				69CF697A2BD02FAC00583A9E /* SceneDelegate.swift in Sources */,
@@ -400,6 +386,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				694613F92BD6F6A700676B6D /* CartViewModel.swift in Sources */,
 				69CF69922BD02FAE00583A9E /* validateArchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -567,6 +554,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 76WUJ9PUX7;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = validateArch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -598,6 +586,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 76WUJ9PUX7;
+				EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = validateArch/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
